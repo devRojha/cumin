@@ -1,10 +1,12 @@
 "use client"
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function Appbar(){
     const [trans, setTrans] = useState(false);
+    const router = useRouter();
     useEffect(() => {
         const bgChange = () => {
           if (window.scrollY >= 90) {
@@ -26,12 +28,12 @@ export default function Appbar(){
             <div className="flex justify-between">
                 <div className="font-bold text-[20px] flex space-x-5">
                   <Image className="h-[50px] w-[50px]" src={"/logob.png"} height={100} width={100} alt="Loading.."/>
-                  <div className="flex flex-col justify-center">Lumin Aerospace</div>
+                  <button onClick={()=>router.push("/")} className="flex flex-col justify-center">Lumin Aerospace</button>
                 </div>
                 <div className="space-x-10">
                     <button>Technology</button>
                     <button>About</button>
-                    <button className="border text-black bg-white rounded-full px-3 py-2">Contact</button>
+                    <button onClick={()=>{router.push("/contact")}} className="border text-black bg-white rounded-full px-3 py-2">Contact</button>
                 </div>
             </div>
         </div>

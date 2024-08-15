@@ -10,18 +10,42 @@ export default function Home() {
           <div className="">Drone is Here</div>
         </div>
       </div>
-      <div className="h-screen text-white mx-10">
-      
+      {/* vision  */}
+      <div className="h-screen text-white py-20 mx-10">
         <div className="h-[2px] bg-slate-600">
           <div className="h-[2px] bg-white w-[20%]"></div>
         </div>
         <div className="mt-10 text-[20px]">VISION</div>
       </div>
-      <div className="h-screen text-white mx-10">
-        <div className="h-[2px] bg-slate-600">
-          <div className="h-[2px] bg-white w-[40%]"></div>
+      {/* Products  */}
+      <div className=" text-black px-10 py-20 bg-white">
+        <div className="h-[2px] bg-slate-200 w-full">
+          <div className="h-[2px] bg-black w-[40%]"></div>
         </div>
-        fd
+        <div className="mt-10 text-[20px]">Our Products</div>
+        <div className="my-20 text-6xl font-thin">
+          <div>Semi Autonomous, </div>
+          <div>Uncompromisingly Sustainable </div>
+        </div>
+        <div className="">
+          <div className="border shadow-lg shadow-slate-200 h-[800px] rounded-lg sticky top-10"></div>
+          <div className="border shadow-lg shadow-slate-200 h-[800px] rounded-lg sticky top-10"></div>
+          <div className="border shadow-lg shadow-slate-200 h-[800px] rounded-lg sticky top-10"></div>
+        </div>
+      </div>
+      {/* Why Lumin */}
+      <div className="h-screen text-white py-20 mx-10">
+        <div className="h-[2px] bg-slate-600">
+          <div className="h-[2px] bg-white w-[60%]"></div>
+        </div>
+        <div className="mt-10 text-[20px]">Why Lumin</div>
+      </div>
+      {/* Compney  */}
+      <div className="h-screen text-white py-20 mx-10">
+        <div className="h-[2px] bg-slate-600">
+          <div className="h-[2px] bg-white w-[80%]"></div>
+        </div>
+        <div className="mt-10 text-[20px]">Compney</div>
       </div>
     </div>
   );

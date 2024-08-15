@@ -21,6 +21,11 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* <Appbar /> */}
         {children}
+        {/* footer  */}
+        <div className="h-[400px] text-white py-10 px-10 bg-white">
+          <div className="h-[2px] bg-slate-400"></div>
+        </div>
+        <div className="bg-green-600 text-center text-white text-sm">All rights reserved</div>
       </body>
     </html>
   );
