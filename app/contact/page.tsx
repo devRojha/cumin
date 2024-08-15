@@ -12,7 +12,7 @@ export default function Contact() {
             <div className="mx-20 mt-10">
                 <div className="text-6xl font-thin">Get In Touch</div>
                 <p className=" text-slate-500 my-10">
-                    REACH OUT, SHARE A QUESTION OR PROVIDE FEEDBACK <br />ON OUR PRODUCTS. FILL OUT THE FORM AND WE'LL<br /> RESPOND AS SOON AS POSSIBLE. 
+                    REACH OUT, SHARE A QUESTION OR PROVIDE FEEDBACK <br />ON OUR PRODUCTS. FILL OUT THE FORM AND WE&apos;LL<br /> RESPOND AS SOON AS POSSIBLE. 
                 </p>
             </div>
         </div>
