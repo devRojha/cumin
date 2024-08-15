@@ -17,7 +17,10 @@ export default function Home() {
         </div>
         <div className="mt-10 text-[20px]">VISION</div>
       </div>
-      <div className="h-screen">
+      <div className="h-screen text-white mx-10">
+        <div className="h-[2px] bg-slate-600">
+          <div className="h-[2px] bg-white w-[40%]"></div>
+        </div>
         fd
       </div>
     </div>

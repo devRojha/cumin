@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Appbar(){
@@ -23,7 +24,10 @@ export default function Appbar(){
     return (
         <div className={`text-white sticky top-0 h-[90px] px-10 flex flex-col justify-center ${trans?"bg-black":"bg-transparent"}`}>
             <div className="flex justify-between">
-                <div className="font-bold text-[20px]">Lumin Aerospace & Technology</div>
+                <div className="font-bold text-[20px] flex space-x-5">
+                  <Image className="h-[50px] w-[50px]" src={"/logob.png"} height={100} width={100} alt="Loading.."/>
+                  <div className="flex flex-col justify-center">Lumin Aerospace</div>
+                </div>
                 <div className="space-x-10">
                     <button>Technology</button>
                     <button>About</button>
