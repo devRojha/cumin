@@ -1,14 +1,18 @@
 "use client"
 
+import MenuSection from "@/components/MenuSection";
 import WhiteAppbar from "@/components/WhiteAppbar";
+import { useState } from "react";
 
 
 
 export default function Contact() {
+  const [menu, setMenu] = useState<boolean>(false);
   return (
     <div className="">
         <div>
-            <WhiteAppbar />
+            <WhiteAppbar menu={menu} setMenu={setMenu}/>
+            <MenuSection menu={menu} setMenu={setMenu}/>
             <div className="mx-20 mt-10 max-sm:mx-4">
                 <div className="text-6xl font-thin">Get In Touch</div>
                 <p className=" text-slate-500 my-10">

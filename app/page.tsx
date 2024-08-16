@@ -1,10 +1,15 @@
+"use client"
 import Appbar from "@/components/Appbar";
+import MenuSection from "@/components/MenuSection";
+import { useState } from "react";
 
 export default function Home() {
+  const [menu, setMenu] = useState<boolean>(false);
   return (
     <div className="bg-black">
       <div className="text-white h-screen bg-center bg-no-repeat bg-black bg-[url('https://www-cdn.djiits.com/dps/bad1e5a4d479357204ae68f6cca736a3.png')]">
-        <Appbar />
+        <Appbar menu={menu} setMenu={setMenu}/>
+        <MenuSection menu={menu} setMenu={setMenu}/>
         <div className="ml-32 h-[100%] mt-32 text-8xl max-sm:text-4xl max-sm:ml-10 stroke-gray-600">
           <div className="mt-20">The Future of</div>
           <div className="">Drone is Here</div>
@@ -28,9 +33,9 @@ export default function Home() {
           <div>Uncompromisingly Sustainable </div>
         </div>
         <div className="">
-          <div className="border shadow-lg shadow-slate-200 h-[800px] rounded-lg sticky top-10"></div>
-          <div className="border shadow-lg shadow-slate-200 h-[800px] rounded-lg sticky top-10"></div>
-          <div className="border shadow-lg shadow-slate-200 h-[800px] rounded-lg sticky top-10"></div>
+          <div className="border shadow-lg shadow-slate-200 h-[600px] rounded-lg sticky top-10 z-10 bg-white"></div>
+          <div className="border shadow-lg shadow-slate-200 h-[600px] rounded-lg sticky top-10 z-20 bg-white"></div>
+          <div className="border shadow-lg shadow-slate-200 h-[600px] rounded-lg sticky top-10 z-30 bg-white"></div>
         </div>
       </div>
       {/* Why Lumin */}

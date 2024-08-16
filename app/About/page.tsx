@@ -1,15 +1,20 @@
 "use client"
 
 import Appbar from "@/components/Appbar";
+import MenuSection from "@/components/MenuSection";
+import { useState } from "react";
 
 
 
 
 export default function About() {
+  const [menu, setMenu] = useState<boolean>(false);
+
   return (
     <div className="bg-slate-100">
       <div className="text-white h-screen bg-center bg-no-repeat bg-black bg-[url('https://www-cdn.djiits.com/dps/bad1e5a4d479357204ae68f6cca736a3.png')]">
-        <Appbar />
+        <Appbar menu={menu} setMenu={setMenu}/>
+        <MenuSection menu={menu} setMenu={setMenu}/>
         <div className="ml-32 h-[100%] mt-32 text-8xl max-sm:text-4xl max-sm:ml-10 stroke-gray-600">
           <div className="mt-20">Improving Everyday</div>
           <div className="">Life With Drone</div>

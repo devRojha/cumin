@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-export default function Appbar(){
+export default function Appbar({menu,setMenu}:{menu:boolean,setMenu:any}){
     const [trans, setTrans] = useState(false);
     const router = useRouter();
     useEffect(() => {
@@ -28,15 +28,15 @@ export default function Appbar(){
             <div className="flex justify-between">
                 <div className="font-bold text-[20px] flex space-x-5">
                   <Image className="h-[50px] w-[50px]" src={"/logob.png"} height={100} width={100} alt="Loading.."/>
-                  <button onClick={()=>router.push("/")} className="flex flex-col justify-center">Lumin Aerospace</button>
+                  <button onClick={()=>router.push("/")} className="flex flex-col justify-center hover:text-slate-500 active:text-blue-900">Lumin Aerospace</button>
                 </div>
                 <div className="space-x-10 max-sm:hidden">
-                    <button>Products</button>
-                    <button onClick={()=>router.push("/About")} >About</button>
-                    <button onClick={()=>{router.push("/contact")}} className="border text-black bg-white rounded-full px-3 py-2">Contact</button>
+                    <button className="hover:text-blue-600 active:text-blue-900">Products</button>
+                    <button onClick={()=>router.push("/About")} className="hover:text-blue-600 active:text-blue-900">About</button>
+                    <button onClick={()=>{router.push("/contact")}} className="border text-black bg-white rounded-full px-3 py-2 hover:text-blue-600 hover:bg-slate-300 active:text-blue-900">Contact</button>
                 </div>
                 <div className="hidden max-sm:flex">
-                    <button className="">
+                    <button onClick={()=>setMenu(!menu)} className="">
                         <Image className="h-[25px] w-[25px] mr-8" src={"/menu-bar.png"} height={100} width={100} alt="Loading"/>
                     </button>
                 </div>
