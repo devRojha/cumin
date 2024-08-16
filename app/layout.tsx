@@ -7,7 +7,7 @@ import Appbar from "@/components/Appbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lumin Aerospace and Technology",
+  title: "Lumin Aerospace",
   description: "A Drone Compney",
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({
         {/* <Appbar /> */}
         {children}
         {/* footer  */}
-        <div className="h-[400px] text-white py-10 px-10 bg-white">
+        <div className="h-[400px] text-white py-10 px-10 max-sm:px-4 bg-white">
           <div className="h-[2px] bg-slate-400"></div>
         </div>
         <div className="bg-green-600 text-center text-white text-sm">All rights reserved</div>

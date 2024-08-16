@@ -9,7 +9,7 @@ export default function Contact() {
     <div className="">
         <div>
             <WhiteAppbar />
-            <div className="mx-20 mt-10">
+            <div className="mx-20 mt-10 max-sm:mx-4">
                 <div className="text-6xl font-thin">Get In Touch</div>
                 <p className=" text-slate-500 my-10">
                     REACH OUT, SHARE A QUESTION OR PROVIDE FEEDBACK <br />ON OUR PRODUCTS. FILL OUT THE FORM AND WE&apos;LL<br /> RESPOND AS SOON AS POSSIBLE. 
@@ -17,7 +17,7 @@ export default function Contact() {
             </div>
         </div>
         {/* form  */}
-        <div className="grid grid-cols-5 mx-20">
+        <div className="grid grid-cols-5 max-sm:grid-cols-1 mx-20 max-sm:mx-4">
             <div className="col-span-2"></div>
             <div className=" pt-20 col-span-3">
                 <div className="grid grid-cols-2 mb-6 space-x-2">
